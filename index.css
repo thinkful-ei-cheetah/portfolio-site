@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  margin: 30px 0;
+}
+
+section {
+  padding: 30px 30px;
+  /* min-height: 100vh; */
+  min-height: 600px;
+}
+
+#intro {
+  display: flex;
+  background-color: #fff;
+}
+
+#intro div:nth-child(1) {
+  flex: 2;
+}
+
+#intro div:nth-child(2) {
+  flex: 4;
+  margin-left: 40px;
+  margin-top: -18px;
+}
+
+#intro h2 {
+  font-size: 70px;
+}
+
+#intro h2.subtitle {
+  font-size: 50px;
+  color: red;
+  font-style: italic;
+}
+
+#break-the-ice {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+#break-the-ice .section-header {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+#break-the-ice .ice-breaker {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+#break-the-ice .card {
+  background-color: white;
+  flex: 1;
+  min-height: 300px;
+}
+
+#break-the-ice .card:nth-child(2) {
+  margin: 0 30px;
+}
+
+.card-body {
+  border: 1px solid black;
+  height: 80%;
+  font-size: 25px;
+  padding: 15px;
+  text-align: center;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  height: 20%;
+  border: 1px solid black;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button.reveal {
+  width: 40%;
+}
+
+#about-me .content{
+  display: flex;
+  margin-top: 20px;
+}
+
+#about-me .content .section-header {
+  flex: 2;
+}
+
+#about-me .section-header h3 {
+  font-size: 70px;
+}
+
+#about-me .section-header h3:nth-child(3) {
+  color: red;
+  font-style: italic;
+}
+
+#about-me .content > div {
+  flex: 4;
+  margin-left: 40px;
+}
+
+#about-me p {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+#my-work {
+  background-color: lightgray;
+}
+
+#my-work .section-header{
+  text-align: center;
+  font-size: 40px;
+}
+
+#my-work .project {
+  border: 1px solid black;
+  margin-top: 40px;
+}
+
+.project {
+  display: flex;
+}
+
+.project .overview {
+  background-color: white;
+  border: 1px solid black;
+  flex: 1;
+}
+
+.project .preview {
+  background-color: white;
+  border: 1px solid black;
+  flex: 1;
+}
+
+.logos span{
+  display: inline-block;
+  width: 50px;
+}

@@ -5,6 +5,14 @@
   font-family: 'Lato', sans-serif;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  font-size: 20px;
+}
+
 h1,h2,h3,h4 {
   font-family: 'Montserrat', sans-serif;
 }
@@ -14,97 +22,64 @@ h1,h2,h3,h4 {
   height: auto;
 }
 
-main {
-  margin: 30px 0;
-}
 
 section {
-  padding: 30px 30px;
-  /* min-height: 100vh; */
-  min-height: 600px;
+  padding: 60px 30px;
+  min-height: 100vh;
+  /* min-height: 600px; */
 }
+
+/* typewriter styles */
+.var-highlight{
+	color: #C0AD60;
+}
+.string-highlight{
+  color: red;
+  font-family: "Courier New";
+}
+
+#typewriter{
+  font-size: 2em;
+  margin: 0;
+  font-family: "Courier New";
+  color: white;
+  font-weight: bold;
+}
+
+#typewriter:after{
+  content: "|";
+  animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+/* end typewriter styles */
 
 #intro {
+  background-image: url('images/home-bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 50%;
+
   display: flex;
-  background-color: #fff;
+  justify-content: center;
+  align-items: center;
 }
 
-#intro div:nth-child(1) {
-  flex: 2;
-}
-
-#intro div:nth-child(2) {
-  flex: 4;
-  margin-left: 40px;
-  margin-top: -18px;
-}
-
-#intro h2 {
-  font-size: 70px;
-}
-
-#intro h2.subtitle {
-  font-size: 50px;
-  color: red;
-  font-style: italic;
-}
-
-#break-the-ice {
-  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-}
-
-#break-the-ice .section-header {
-  text-align: center;
-  font-size: 40px;
-  margin: 20px 0;
-}
-
-#break-the-ice .ice-breaker {
-  display: flex;
-  margin-top: 40px;
-  justify-content: space-between;
-}
-
-#break-the-ice .card {
-  background-color: white;
-  flex: 1;
-  min-height: 300px;
-}
-
-#break-the-ice .card:nth-child(2) {
-  margin: 0 30px;
-}
-
-.card-body {
-  border: 1px solid black;
-  height: 80%;
-  font-size: 25px;
-  padding: 15px;
-  text-align: center;
-}
-
-.card-footer {
-  display: flex;
-  justify-content: flex-end;
-  height: 20%;
-  border: 1px solid black;
-}
-
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-.button.reveal {
-  width: 40%;
-}
-
+/* about me styles */
 #about-me .content{
   display: flex;
   margin-top: 20px;
@@ -118,14 +93,11 @@ section {
   font-size: 70px;
 }
 
-#about-me .section-header h3:nth-child(3) {
-  color: red;
-  font-style: italic;
-}
-
 #about-me .content > div {
   flex: 4;
+  max-width: 800px;
   margin-left: 40px;
+  margin-right: 40px;
 }
 
 #about-me p {
@@ -133,8 +105,84 @@ section {
   font-size: 20px;
 }
 
-#my-work {
-  background-color: lightgray;
+#about-me p a {
+  color: red;
+}
+
+#about-me .game h3{
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+#about-me .game > p{
+  font-style: italic;
+  margin-top: -7px;
+}
+
+.hidden {
+  display: none;
+}
+
+#ice-breaker {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+#ice-breaker li {
+  font-size: 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 10px;
+  max-width: 400px;
+  background: lightgray;
+}
+
+#ice-breaker li p {
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+#ice-breaker li span {
+  color: green;
+}
+
+#ice-breaker li span.lie {
+  color: red;
+}
+
+/* aside styling */
+aside {
+  min-height: 500px;
+  background-image: url('images/computer-workstation-bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+aside .quote {
+  margin-left: 40px;
+}
+
+aside .quote p {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+aside .quote p.spacer {
+  margin: 40px 0;
+}
+
+/* my work styling */
+#my-work h3{
+  font-size: 70px;
 }
 
 #my-work .section-header{
@@ -142,9 +190,8 @@ section {
   font-size: 40px;
 }
 
-#my-work .project {
-  border: 1px solid black;
-  margin-top: 40px;
+#my-work .project h4{
+  font-size: 40px;
 }
 
 .project {
@@ -152,18 +199,110 @@ section {
 }
 
 .project .overview {
-  background-color: white;
-  border: 1px solid black;
   flex: 1;
+  align-self: center;
+  margin-top: 60px;
+}
+
+.project .overview p, .project .overview ul {
+  margin: 20px 0;
+}
+
+.project .overview li {
+  margin: 10px 0;
 }
 
 .project .preview {
-  background-color: white;
-  border: 1px solid black;
   flex: 1;
 }
 
 .logos span{
   display: inline-block;
   width: 50px;
+}
+
+/* media queries - tablets */
+@media only screen and (max-width: 885px) {
+  #typewriter {
+    font-size: 1.5em;
+  }
+  #intro {
+    background-position: 75% 50%;
+  }
+
+  #about-me .content {
+    flex-direction: column;
+  }
+}
+
+/* media queries - phones */
+@media only screen and (max-width: 640px) {
+  
+  #typewriter {
+    font-size: 1.5em;
+  }
+  #intro {
+    background-position: 57% 50%;
+    position: relative;
+  }
+
+  #intro > div {
+    position: absolute;
+    top: 27%;
+    left: -28%;
+    font-size: 13px;
+  }
+
+  #about-me .content {
+    flex-direction: column;
+  }
+  
+  #about-me .content .section-header {
+    flex: 1;
+  }
+  
+  #about-me .content > div {
+    flex: 1;
+    margin-left: 0;
+  }
+
+  #about-me .content > div:nth-child(2) {
+    margin-top: 30px;
+  }
+
+  #about-me .game h3 {
+    font-size: 27px;
+  }
+
+  #about-me p {
+    font-size: 18px;
+  }
+
+  #about-me #contact-info a{
+    font-size: 18px;
+  }
+
+  #about-me li {
+    margin: 15px 0;
+  }
+
+  aside .quote p {
+    font-size: 25px;
+    display: inline;
+  }
+
+  aside .quote p.spacer {
+    display: block;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project .overview {
+    margin-top: 30px;
+  }
+  
+
+  
 }

@@ -26,14 +26,13 @@ h1,h2,h3,h4 {
 section {
   padding: 60px 30px;
   min-height: 100vh;
-  /* min-height: 600px; */
 }
 
 /* typewriter styles */
-.var-highlight{
+.vh{
 	color: #C0AD60;
 }
-.string-highlight{
+.sh{
   color: red;
   font-family: "Courier New";
 }
@@ -239,18 +238,12 @@ aside .quote p.spacer {
 @media only screen and (max-width: 640px) {
   
   #typewriter {
-    font-size: 1.5em;
-  }
-  #intro {
-    background-position: 57% 50%;
-    position: relative;
+    font-size: 1.2em;
+    margin-left: -55px;
   }
 
-  #intro > div {
-    position: absolute;
-    top: 27%;
-    left: -28%;
-    font-size: 13px;
+  #intro {
+    background-position: 57% 50%;
   }
 
   #about-me .content {

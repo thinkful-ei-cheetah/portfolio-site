@@ -68,10 +68,12 @@ section {
 /* end typewriter styles */
 
 #intro {
-  background-image: url('images/home-bg.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 100% 50%;
+  background: url('images/home-bg.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: black;
 
   display: flex;
   justify-content: center;
@@ -238,9 +240,14 @@ aside .quote p.spacer {
     margin-left: -55px;
   }
 
-  #intro {
-    background-position: 57% 50%;
-  }
+  /* #intro {
+    background: url('images/home-bg.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+  } */
 
   #about-me .content {
     flex-direction: column;

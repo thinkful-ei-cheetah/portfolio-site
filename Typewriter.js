@@ -18,7 +18,7 @@ const TypeWriter = (function() {
     tag = '',
     writingTag = false,
     tagOpen = false,
-    typeSpeed = 100,
+    typeSpeed = 50,
     tempTypeSpeed = 0;
   
   const type = function() {

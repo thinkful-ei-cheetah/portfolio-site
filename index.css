@@ -219,7 +219,7 @@ aside .quote p.spacer {
 }
 
 /* media queries - tablets */
-@media only screen and (max-width: 885px) {
+@media (max-width: 885px) {
   #typewriter {
     font-size: 1.5em;
   }
@@ -233,21 +233,12 @@ aside .quote p.spacer {
 }
 
 /* media queries - phones */
-@media only screen and (max-width: 640px) {
+@media (max-width: 640px) {
   
   #typewriter {
     font-size: 1.2em;
     margin-left: -55px;
   }
-
-  /* #intro {
-    background: url('images/home-bg.png') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: black;
-  } */
 
   #about-me .content {
     flex-direction: column;

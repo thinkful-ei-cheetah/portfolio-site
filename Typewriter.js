@@ -10,7 +10,7 @@ const TypeWriter = (function() {
       skills:[<span class="sh">'React'</span>,
               <span class="sh">'Node'</span>,
               <span class="sh">'Rails'</span>,
-              <span class="sh">'Postgres'</span>,
+              <span class="sh">'Postgres'</span>],
     };
   `;
 

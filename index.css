@@ -302,6 +302,18 @@ aside .quote p.spacer {
   .section-header h3 {
     font-size: 50px;
   }
+}
 
-  
+@media (max-width: 415px) {
+  #typewriter {
+    font-size: 1em;
+    /* margin-left: -55px; */
+  }
+
+  #intro {
+    background-image: url('images/headshot-bg-4.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+  }
 }
